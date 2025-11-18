@@ -1,11 +1,13 @@
 <?php
+// 1. Iniciar la sesión
 session_start();
 
-// --- 1. Control de Acceso ---
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== TRUE) {
-    // Si no está logeado, lo envía de vuelta al login
-    header("location: login.php");
-    exit;
+// 2. Comprobar si la sesión está iniciada
+if ( !isset($_SESSION['usuario']) ) {
+    
+// 3. Redirigir esta pagina si no hay sesión iniciada
+    header('Location: login.php');
+    exit();
 }
 ?>
 <!DOCTYPE html>
