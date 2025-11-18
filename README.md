@@ -1,3 +1,4 @@
+
 # Cinepuma
 ## ¿Qué es?
 Este documento trata sobre el plan de diseño de la interfaz de un sitio web dirigido a jóvenes amantes del cine. 
@@ -10,3 +11,6 @@ sino que también sea muy práctica y sencilla de manejar, asegurando así el tr
 
 ## ¿Qué tecnologías usa?
 Lenguajes: HTML,CSS,PHP
+
+
+
