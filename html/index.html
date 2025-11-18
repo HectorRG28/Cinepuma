@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepuma - Géneros</title>
+    <link rel="stylesheet" href="Generos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="Encabezado">
+            <div class="marca">
+                <img width="50" src="Logo2.png" alt="Logo Cinepuma" class="logo-img">
+                <h1>Cinepuma</h1>
+            </div>
+
+            <form>
+                <label for="busqueda">Buscar:</label>
+                <input type="text" id="busqueda" placeholder="Buscar películas...">
+                <button type="button">Buscar</button>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="Genero" class="enlace-nav">Géneros</a></li>
+                    <li><a href="Mejores valoradas" class="enlace-nav">Mejor valoradas</a></li>
+                    <li><a href="help" class="enlace-nav">Ayuda</a></li>
+                    <li><a href="Reseñas" class="enlace-nav">Reseñas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form>
+        <label for="busqueda">Buscar:</label>
+        <input type="text" id="busqueda" placeholder="Buscar películas...">
+        <button type="button">Buscar</button>
+    </form>
+
+    <main class="container mt-4">
+        <h2 class="text-center mb-4">Estrenos Destacados</h2>
+
+        <div id="carruselCinepuma" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselCinepuma" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carruselCinepuma" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carruselCinepuma" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner rounded-4 shadow-lg">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="https://image.tmdb.org/t/p/original/wHqGb8yp6JuF9wrIBbfK8p4HKtQ.jpg"
+                        class="d-block w-100 imagen-carrusel" alt="El Contador 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>El Contador 2</h5>
+                        <p>La acción regresa más intensa que nunca.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://image.tmdb.org/t/p/original/ncKCQVXgk4BcQV6XbvesgZ2zGpZ.jpg"
+                        class="d-block w-100 imagen-carrusel" alt="Oppenheimer">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Oppenheimer</h5>
+                        <p>El mundo cambiará para siempre.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://image.tmdb.org/t/p/original/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+                        class="d-block w-100 imagen-carrusel" alt="The Batman">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Batman</h5>
+                        <p>La venganza llega a Gotham.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselCinepuma" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselCinepuma" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
